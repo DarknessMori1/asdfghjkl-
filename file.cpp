@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include "file.h"
-
+#include "libhelp.h"
 
 using namespace std;
 
@@ -13,14 +13,15 @@ using namespace std;
     for (int i=0; i<argc; i++){
         cout <<"argv[" << i << "] = " << argv[i] << endl;
         if( (string(argv[i]) == "-h" ) or 
-            (string(argv[i]) == '--help')  )
+            (string(argv[i]) == "--help")  )
             { 
                 flag = true;
             }
     }
     cout << "hello world\n";
     if(flag == true){
-        help(3,5,8); //вызов функции HELP
+        help(31,15,81); //вызов функции HELP
+        PrintHelp(55,11,22); //вызов функции HELP бибилиотечный
     }
  }
 
@@ -29,7 +30,7 @@ void help(
     int minor_ver, //второе
     int patch_ver /*третье*/
 ){
-    
+        cout << "Print help from file.cpp" << endl;    
         cout<< major_ver << "." << minor_ver << "." << patch_ver << endl;
 }
 
