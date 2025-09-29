@@ -4,6 +4,7 @@
 #include "libhelp.h"
 
 using namespace std;
+int main(int argc, char* argv[]){
 
    bool Hflag = false;
     bool Rflag = false;
@@ -34,7 +35,7 @@ using namespace std;
     return RetValue;
  }/*void foo(); //объявление функции foo (перенесено в file.h)*/
 
- int main(int argc, char* argv[]){
+ 
  
 
 void help(
