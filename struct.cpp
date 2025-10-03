@@ -5,12 +5,20 @@ using namespace std;
 
 // Структура CELL для работы с битовыми полями
 // Имитирует структуру ячейки текста с атрибутами форматирования
+// struct CELL {   
+//     unsigned short character  : 8;  // 00000000 ????????
+//     unsigned short foreground : 3;  // 00000??? 00000000
+//     unsigned short intensity  : 1;  // 0000?000 00000000
+//     unsigned short background : 3;  // 0???0000 00000000
+//     unsigned short blink      : 1;  // ?0000000 00000000
+// } ;
+
 struct CELL {   
-    unsigned short character  : 8;  // 00000000 ????????
-    unsigned short foreground : 3;  // 00000??? 00000000
-    unsigned short intensity  : 1;  // 0000?000 00000000
-    unsigned short background : 3;  // 0???0000 00000000
-    unsigned short blink      : 1;  // ?0000000 00000000
+    unsigned short foreground : 3; //00000000 00000???
+    unsigned short character  : 8; // 00000??? ?????000
+    unsigned short intensity  : 1;  //0000?000 00000000
+    unsigned short background : 3;  //0???0000 00000000
+    unsigned short blink      : 1;  //?0000000 00000000
 } ;
 
 int main(int argc, char* argv[]) {
