@@ -9,5 +9,14 @@ void PrintHelp(
     int patch_ver /*третье*/
 ){
     cout << "Print help from libhelp.cpp" << endl;    
+    cout << "Print help from libhelp.cpp" << endl;    
+    cout << "Print help from libhelp.cpp" << endl;    
+    cout << "Print help from libhelp.cpp" << endl;    
+    cout << "Print help from libhelp.cpp" << endl;    
+    cout << "Print help from libhelp.cpp" << endl;    
+    cout << "Print help from libhelp.cpp" << endl;    
+    cout << "Print help from libhelp.cpp" << endl;    
+    cout << "Print help from libhelp.cpp" << endl;    
+    cout << "Print help from libhelp.cpp" << endl;    
     cout<< major_ver << "." << minor_ver << "." << patch_ver << endl;
 }
